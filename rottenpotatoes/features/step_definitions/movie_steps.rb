@@ -45,11 +45,4 @@ And /I should see all of the movies/ do
   # Make sure that all the movies in the app are visible in the table
   @movies = Movie.all
   page.all('table#movies tr').count.should == @movies.size + 1
-  # assert page.body = "Not all movies listed."
-  #@movies.each { |movie|
-  #  if find_field(@title_header).value.not_include? movie
-  #    assert page.body = "#{movie.title} was not listed."
-  #  end
-  #  }
-  #end
 end
